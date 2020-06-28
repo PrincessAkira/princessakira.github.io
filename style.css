@@ -29,8 +29,8 @@ body {
     overflow: hidden;
     height: 100%;
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4),
-            rgba(0, 0, 0, 0.4)), url('https://images7.alphacoders.com/617/617537.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 1.8),
+            rgba(0, 0, 0, 0.4)), url('https://www.wallpapermaiden.com/wallpaper/36270/download/1920x1080/anime-landscape-scenery-clouds-stars-buildings-anime.jpeg');
     background-size: cover;
     background-position: center center;
 }
@@ -47,7 +47,7 @@ div.box {
     top: 35%;
     left: 46%;
     margin-top: -100px;
-    margin-left: -75px;
+    margin-left: -67px;
     border-radius: 25px;
     border: #ffffff;
     padding: 10px;
@@ -67,11 +67,6 @@ div.box {
     
 }
 
-.box:hover {
-transform: scale(1.1576);
-
-}
-
 .footer {
     position: fixed;
     left: 0;
@@ -81,7 +76,36 @@ transform: scale(1.1576);
     text-align: center;
     font-weight: lighter;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: transparent;
+}
+
+@keyframes colorRotater {
+    from {
+        color: rgb(255, 0, 0);
+    }
+
+    16.6% {
+        color: rgb(255, 0, 255);
+    }
+
+    33.3% {
+        color: rgb(0, 0, 255);
+    }
+
+    50% {
+        color: rgb(0, 255, 255);
+    }
+
+    66.6% {
+        color: rgb(0, 255, 0);
+    }
+
+    83.3% {
+        color: rgb(255, 255, 0);
+    }
+
+    to {
+        color: rgb(255, 0, 0);
+    }
 }
 
 .gituhubu {
@@ -100,6 +124,7 @@ transform: scale(1.1576);
 .gituhubu h1 {
     color: white;
     font-weight: normal;
+    font-size: 40px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
 
