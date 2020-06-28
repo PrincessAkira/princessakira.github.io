@@ -8,13 +8,6 @@ html,
 body {
     overflow: hidden;
     height: 100%;
-    background-size: cover;
-    background-position: center center;
-}
-
-.titlebaro:hover {
-    transform-origin: scale(1.05425);
-
 }
 
 .titlebaro {
@@ -29,7 +22,7 @@ body {
     overflow: hidden;
     height: 100%;
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1.8)), url('https://www.wallpapermaiden.com/wallpaper/36270/download/1920x1080/anime-landscape-scenery-clouds-stars-buildings-anime.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url('https://www.wallpapermaiden.com/wallpaper/36270/download/1920x1080/anime-landscape-scenery-clouds-stars-buildings-anime.jpeg');
     background-size: cover;
     background-position: center center;
 }
