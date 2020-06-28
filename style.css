@@ -12,6 +12,11 @@ body {
     background-position: center center;
 }
 
+.titlebaro:hover {
+    transform-origin: scale(1.05425);
+    
+    }
+
 .titlebaro {
     color: white;
     text-align: center;
@@ -33,22 +38,38 @@ body {
 
 
 div.box {
-    background-color: rgba(24, 26, 27, 0.8)
+    background-color: rgba(24, 26, 27, 0.89)
 }
 
 .box {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
     position: fixed;
-    /* or absolute */
     top: 35%;
     left: 46%;
     margin-top: -100px;
     margin-left: -75px;
     border-radius: 25px;
-    background: #000000;
     border: #ffffff;
     padding: 10px;
     width: 300px;
     height: 300px;
+    animation:load_up 2s forwards;
+    -webkit-animation:load_up 2s forwards;
+}
+
+@keyframes load_up{
+    from{opacity:0;top:100%}
+    to{opacity:1;top:35%;}
+    
+}@-webkit-keyframes load_up{
+    from{opacity:0;top:100%}
+    to{opacity:1;top:35%;}
+    
+}
+
+.box:hover {
+transform: scale(1.1576);
+
 }
 
 .footer {
