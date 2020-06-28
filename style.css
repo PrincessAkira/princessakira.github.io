@@ -1,0 +1,118 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+html,
+body {
+    overflow: hidden;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.header {
+    overflow: hidden;
+    height: 100%;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)), url('https://images7.alphacoders.com/617/617537.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+div.box {
+    background-color: rgba(24, 26, 27, 0.8)
+}
+
+.box {
+    position: fixed;
+    /* or absolute */
+    top: 35%;
+    left: 46%;
+    margin-top: -100px;
+    margin-left: -75px;
+    border-radius: 25px;
+    background: #000000;
+    border: #ffffff;
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: transparent;
+}
+
+.gituhubu {
+    position: fixed;
+    /* or absolute */
+    top: 20%;
+    left: 46%;
+    margin-top: -50px;
+    margin-left: -75px;
+    border-radius: 25px;
+    padding: 10px;
+    width: 300px;
+    height: 400px;
+}
+
+.gituhubu h1 {
+    color: white;
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+
+}
+
+.column {
+    opacity: 1.0;
+    text-decoration: none;
+    text-align: center !important;
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    animation: colorRotate 6s linear 0s infinite;
+
+}
+
+@keyframes colorRotate {
+    from {
+        color: rgb(255, 0, 0);
+    }
+
+    16.6% {
+        color: rgb(255, 0, 255);
+    }
+
+    33.3% {
+        color: rgb(0, 0, 255);
+    }
+
+    50% {
+        color: rgb(0, 255, 255);
+    }
+
+    66.6% {
+        color: rgb(0, 255, 0);
+    }
+
+    83.3% {
+        color: rgb(255, 255, 0);
+    }
+
+    to {
+        color: rgb(255, 0, 0);
+    }
+}
