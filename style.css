@@ -12,6 +12,7 @@ body {
 }
 
 .titlebaro {
+    position: fixed;
     color: white;
     text-align: center;
     font-weight: lighter;
@@ -101,6 +102,11 @@ div.box {
 }
 
 .gituhubu h1 {
+    top: 20%;
+    left: 46%;
+    margin-top: -50px;
+    margin-left: -53px;
+    position: fixed;
     color: white;
     font-weight: normal;
     font-size: 40px;
