@@ -115,6 +115,17 @@ div.box {
 
 }
 
+.columnForError {
+    opacity: 1.0;
+    text-decoration: none;
+    text-align: center !important;
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    animation: colorRotate 6s linear 0s infinite;
+
+}
+
 .column {
     opacity: 1.0;
     text-decoration: none;
