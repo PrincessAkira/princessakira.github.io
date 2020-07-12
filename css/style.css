@@ -163,6 +163,10 @@ div.box {
     isolation: isolate;
 }
 
+.images:before {
+    background: rgba(0, 0, 0, 0);
+    }
+
 .sexappeal {
     opacity: 1.0;
     text-decoration: none;
