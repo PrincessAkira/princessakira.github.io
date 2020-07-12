@@ -21,11 +21,14 @@ body {
 }
 
 .header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1.3)), url("https://images.hdqwalls.com/wallpapers/anime-cityscape-landscape-scenery-5k-r6.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1.3)), url("https://i.imgur.com/CHL9SR1.jpg");
     background-size: cover;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
     background-repeat: no-repeat;
     background-position: center center;
     overflow: hidden;
+    transform: scale(1.1); 
     height: 100%;
 }
 
