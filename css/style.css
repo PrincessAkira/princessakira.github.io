@@ -146,6 +146,7 @@ div.box {
     width: 300px;
     height: 300px;
     margin-top: -160px;
+    mix-blend-mode: difference;
     transition: transform .2s;
     margin-left: -64px;
     background-image: url("https://i.imgur.com/9argnSP.png");
@@ -163,9 +164,6 @@ div.box {
     isolation: isolate;
 }
 
-.images:before {
-    background: rgba(0, 0, 0, 0);
-    }
 
 .sexappeal {
     opacity: 1.0;
