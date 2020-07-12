@@ -159,11 +159,6 @@ div.box {
     transform: scale(1.1003);
 }
 
-.images.darkmode--activated img {
-    isolation: isolate;
-}
-
-
 .sexappeal {
     opacity: 1.0;
     text-decoration: none;
