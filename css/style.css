@@ -141,8 +141,8 @@ div.box {
     }
 
 }
-
 .images {
+    
     width: 300px;
     height: 300px;
     margin-top: -160px;
@@ -154,8 +154,13 @@ div.box {
     left: 46%;
     position: fixed;
 }
+
 .images:hover {
     transform: scale(1.1003);
+}
+
+.images.darkmode--activated img {
+    isolation: isolate;
 }
 
 .sexappeal {
