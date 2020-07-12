@@ -1,5 +1,5 @@
 * {
-    
+
     margin: 0px;
     padding: 0px;
 }
@@ -40,7 +40,7 @@ div.box {
     position: fixed;
     top: 35%;
     left: 46%;
-    margin-top: -100px;
+    margin-top: 90px;
     margin-left: -77px;
     border-radius: 25px;
     border: #ffffff;
@@ -104,7 +104,7 @@ div.box {
 .gituhubu h1 {
     top: 20%;
     left: 46%;
-    margin-top: -50px;
+    margin-top: 150px;
     margin-left: -53px;
     position: fixed;
     color: white;
@@ -112,7 +112,50 @@ div.box {
     font-size: 40px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
+    animation: load_up2 2s forwards;
+    -webkit-animation: load_up2 2s forwards;
+}
 
+@keyframes load_up2 {
+    from {
+        opacity: 0;
+        top: 85%
+    }
+
+    to {
+        opacity: 1;
+        top: 20%;
+    }
+
+}
+
+@-webkit-keyframes load_up2 {
+    from {
+        opacity: 0;
+        top: 85%
+    }
+
+    to {
+        opacity: 1;
+        top: 20%;
+    }
+
+}
+
+.images {
+    width: 300px;
+    height: 300px;
+    margin-top: -160px;
+    transition: transform .2s;
+    margin-left: -64px;
+    background-image: url("https://i.imgur.com/9argnSP.png");
+    background-repeat: no-repeat;
+    top: 20%;
+    left: 46%;
+    position: fixed;
+}
+.images:hover {
+    transform: scale(1.1003);
 }
 
 .sexappeal {
