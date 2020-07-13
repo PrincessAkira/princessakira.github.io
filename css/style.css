@@ -89,6 +89,38 @@ div.box {
     text-align: center;
     font-weight: lighter;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    animation: load_in 6s forwards;
+    -webkit-animation: load_in 6s forwards;
+}
+
+@keyframes load_in {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 0.5;
+    }
+    
+    to {
+        opacity: 1;
+    }
+    
+    }
+
+@-webkit-keyframes load_in {
+from {
+    opacity: 0;
+}
+
+to {
+    opacity: 0.5;
+}
+
+to {
+    opacity: 1;
+}
+
 }
 
 .gituhubu {
@@ -154,6 +186,8 @@ div.box {
     top: 20%;
     left: 46%;
     position: fixed;
+    animation: load_in 4s forwards;
+    -webkit-animation: load_in 4s forwards;
 }
 .images:hover {
     transform: scale(1.1003);
