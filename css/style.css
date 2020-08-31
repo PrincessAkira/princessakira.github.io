@@ -7,6 +7,8 @@
 
 html,
 body {
+    transition: ease-in-out;
+    transition-duration: 2s;
     overflow: hidden;
     height: 100%;
 }
@@ -27,13 +29,12 @@ body {
     -webkit-filter: blur(5px);
     background-repeat: no-repeat;
     background-position: center center;
-    overflow: hidden;
     transform: scale(1.1);
     height: 100%;
 }
 
 div.box {
-    background-color: rgba(24, 26, 27, 0.89)
+    background-color: rgba(24, 26, 27, 0.7)
 }
 
 .box {
@@ -243,6 +244,7 @@ div.box {
         color: rgb(255, 0, 0);
     }
 }
+
 
 /*
 
