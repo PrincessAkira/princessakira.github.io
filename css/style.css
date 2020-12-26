@@ -1,5 +1,4 @@
 * {
-
     margin: 0px;
     padding: 0px;
 }
@@ -52,7 +51,12 @@ div.box {
     animation: load_up 2s forwards;
     -webkit-animation: load_up 2s forwards;
 }
-
+.box .column a{
+    transition: 0.5s;   
+}
+.box .column a:hover{
+    transform: translateY(-5px);
+}
 @keyframes load_up {
     from {
         opacity: 0;
@@ -82,7 +86,7 @@ div.box {
 .footer {
     position: fixed;
     left: 0;
-    bottom: 0;
+    bottom: 10px;
     width: 100%;
     color: white;
     text-align: center;
@@ -190,7 +194,7 @@ div.box {
 }
 
 .images:hover {
-    transform: scale(1.10098);
+    transform: scale(1.05; /* The image enlarges to go beyond the top area, so 0.5 seems fair instead.*/
 }
 
 .sexappeal {
