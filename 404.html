@@ -1,153 +1,89 @@
 <!DOCTYPE html>
+<html>
 
 <head>
+    <title>im smoll >~<</title> <!-- HTML Meta Tags -->
+            <meta name="description" content="Where my Hecate and Barret rest, is home.">
 
-    <html>
-    <link rel="shortcut icon" href="icon.png" />
-    <title>404 Yukii is beeing Baka >~<</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+            <!-- Google / Search Engine Tags -->
+            <meta itemprop="name" content="Sinonaim">
+            <meta itemprop="description" content="Where my Hecate and Barret rest, is home.">
+            <meta itemprop="image" content="https://i.imgur.com/rXBGQDf.png">
+
+            <!-- Facebook Meta Tags -->
+            <meta property="og:url" content="https://sinonaim.de">
+            <meta property="og:type" content="website">
+            <meta property="og:title" content="Sinonaim">
+            <meta property="og:description" content="Where my Hecate and Barret rest, is home.">
+            <meta property="og:image" content="https://i.imgur.com/rXBGQDf.png">
+
+            <!-- Twitter Meta Tags -->
+            <meta name="twitter:card" content="summary_large_image">
+            <meta name="twitter:title" content="Sinonaim">
+            <meta name="twitter:description" content="Where my Hecate and Barret rest, is home.">
+            <meta name="twitter:image" content="https://i.imgur.com/rXBGQDf.png">
+            <link rel="shortcut icon" href="icon.png" />
+            <link rel="stylesheet" type="text/css" href="css/style.css">
+
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176787726-1"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+                gtag('js', new Date());
+                gtag('config', 'UA-176787726-1');
+            </script>
+
+            <script>
+                msg = " ";
+                msg = "404 Error you Baka qwq " + msg;
+                position = 0;
+
+                function scrolltitle() {
+                    document.title = msg.substring(position, msg.length) + msg.substring(0, position);
+                    position++;
+                    if (position > msg.length) position = 0
+                    window.setTimeout("scrolltitle()", 170);
+                }
+                scrolltitle();
+            </script>
 
 </head>
 
 <body>
-    <div class="header">
-        <div id="particles-js"></div>
+    <div id="back-san">
+        <video autoplay muted loop id="video-san">
+            <source src="background.mp4" type="video/mp4">
+        </video>
     </div>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script type="text/javascript">
-        particlesJS("particles-js", {
-            "particles": {
-                "number": {
-                    "value": 30,
-                    "density": {
-                        "enable": true,
-                        "value_area": 800
-                    }
-                },
-                "color": {
-                    "value": "#ffffff"
-                },
-                "shape": {
-                    "type": "circle",
-                    "stroke": {
-                        "width": 0,
-                        "color": "#000000"
-                    },
-                    "polygon": {
-                        "nb_sides": 5
-                    },
-                    "image": {
-                        "src": "img/github.svg",
-                        "width": 100,
-                        "height": 100
-                    }
-                },
-                "opacity": {
-                    "value": 0.25,
-                    "random": false,
-                    "anim": {
-                        "enable": false,
-                        "speed": 1,
-                        "opacity_min": 0.1,
-                        "sync": false
-                    }
-                },
-                "size": {
-                    "value": 3,
-                    "random": true,
-                    "anim": {
-                        "enable": false,
-                        "speed": 40,
-                        "size_min": 0.1,
-                        "sync": false
-                    }
-                },
-                "line_linked": {
-                    "enable": true,
-                    "distance": 150,
-                    "color": "#ffffff",
-                    "opacity": 0.3,
-                    "width": 1
-                },
-                "move": {
-                    "enable": true,
-                    "speed": 3,
-                    "direction": "none",
-                    "random": false,
-                    "straight": false,
-                    "out_mode": "out",
-                    "bounce": false,
-                    "attract": {
-                        "enable": false,
-                        "rotateX": 600,
-                        "rotateY": 1200
-                    }
-                }
-            },
-            "interactivity": {
-                "detect_on": "canvas",
-                "events": {
-                    "onhover": {
-                        "enable": false,
-                        "mode": "repulse"
-                    },
-                    "onclick": {
-                        "enable": false,
-                        "mode": "push"
-                    },
-                    "resize": true
-                },
-                "modes": {
-                    "grab": {
-                        "distance": 400,
-                        "line_linked": {
-                            "opacity": 1
-                        }
-                    },
-                    "bubble": {
-                        "distance": 400,
-                        "size": 40,
-                        "duration": 2,
-                        "opacity": 8,
-                        "speed": 3
-                    },
-                    "repulse": {
-                        "distance": 200,
-                        "duration": 0.4
-                    },
-                    "push": {
-                        "particles_nb": 4
-                    },
-                    "remove": {
-                        "particles_nb": 2
-                    }
-                }
-            },
-            "retina_detect": true
-        });
-        var count_particles, stats, update;
-        stats = new Stats;
-        stats.setMode(0);
-        stats.domElement.style.position = 'absolute';
-        stats.domElement.style.left = '0px';
-        stats.domElement.style.top = '0px';
-        document.body.appendChild(stats.domElement);
-        count_particles = document.querySelector('.js-count-particles');
-        update = function () {
-            stats.begin();
-            stats.end();
-            if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-                count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-            }
-            requestAnimationFrame(update);
-        };
-        requestAnimationFrame(update);;
-    </script>
+    <div id="blocks">
+        <div id="image">
+            <img src="https://i.imgur.com/Q2McCR2.png" alt="qwq" draggable="false" height="300px" width="300px">
+        </div>
+        <div id="text">
+            <h1>Hi, im Sinonaim</h1>
+        </div>
+        <div id="box-pre">
+            <div id="box-self">
+                <div id="column">
+                   <p>and Bad at coding rofl</p>
+                   <p>Thats why 404?</p>
+                   <p>idfk u tell me</p>
+                   <p>now go die</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
-<div class="box">
-    <br>
-    <div class="sexappeal">Yukii cant code thats <br> why u see this here
+
+<footer>
+    <div id="foot">
+        <h1>&copy Sinonaim 2021</h1>
     </div>
-</div>
+</footer>
 
 </html>

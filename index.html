@@ -1,30 +1,30 @@
 <!DOCTYPE html>
+<html>
 
 <head>
     <title>im smoll >~<</title> <!-- HTML Meta Tags -->
-            <meta name="description" content="My small selfmade Website with no prior Knowledge of CSS and HTML.
-I love Kneesocks btw >~< and big fuck you to rikuwu <3 -3">
+            <meta name="description" content="Where my Hecate and Barret rest, is home.">
+
+            <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.8, maximum-scale=1.0">
+
 
             <!-- Google / Search Engine Tags -->
-            <meta itemprop="name" content="Yukii´s Space">
-            <meta itemprop="description" content="My small selfmade Website with no prior Knowledge of CSS and HTML.
-            I love Kneesocks btw >~< and big fuck you to rikuwu <3 -3">
-            <meta itemprop="image" content="https://i.imgur.com/bzVnSax.png">
+            <meta itemprop="name" content="Sinonaim">
+            <meta itemprop="description" content="Where my Hecate and Barret rest, is home.">
+            <meta itemprop="image" content="https://i.imgur.com/rXBGQDf.png">
 
             <!-- Facebook Meta Tags -->
-            <meta property="og:url" content="http://smallyukii.me">
+            <meta property="og:url" content="https://sinonaim.de">
             <meta property="og:type" content="website">
-            <meta property="og:title" content="Yukii´s Space">
-            <meta property="og:description" content="My small selfmade Website with no prior Knowledge of CSS and HTML.
-            I love Kneesocks btw >~< and big fuck you to rikuwu <3 -3">
-            <meta property="og:image" content="https://i.imgur.com/bzVnSax.png">
+            <meta property="og:title" content="Sinonaim">
+            <meta property="og:description" content="Where my Hecate and Barret rest, is home.">
+            <meta property="og:image" content="https://i.imgur.com/rXBGQDf.png">
 
             <!-- Twitter Meta Tags -->
             <meta name="twitter:card" content="summary_large_image">
-            <meta name="twitter:title" content="Yukii´s Space">
-            <meta name="twitter:description" content="My small selfmade Website with no prior Knowledge of CSS and HTML.
-            I love Kneesocks btw >~< and big fuck you to rikuwu <3 -3">
-            <meta name="twitter:image" content="https://i.imgur.com/bzVnSax.png">
+            <meta name="twitter:title" content="Sinonaim">
+            <meta name="twitter:description" content="Where my Hecate and Barret rest, is home.">
+            <meta name="twitter:image" content="https://i.imgur.com/rXBGQDf.png">
             <link rel="shortcut icon" href="icon.png" />
             <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -39,151 +39,57 @@ I love Kneesocks btw >~< and big fuck you to rikuwu <3 -3">
                 gtag('js', new Date());
                 gtag('config', 'UA-176787726-1');
             </script>
+
+            <script>
+                msg = " ";
+                msg = "qwq this is an aweasom website" + msg;
+                position = 0;
+
+                function scrolltitle() {
+                    document.title = msg.substring(position, msg.length) + msg.substring(0, position);
+                    position++;
+                    if (position > msg.length) position = 0
+                    window.setTimeout("scrolltitle()", 170);
+                }
+                scrolltitle();
+            </script>
+
 </head>
 
 <body>
-    <div class="header">
-        <div id="particles-js"></div>
+        <div id="back-san">
+        <video autoplay muted loop id="video-san">
+            <source src="background.mp4" type="video/mp4">
+        </video>
     </div>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script type="text/javascript">
-        particlesJS("particles-js", {
-            "particles": {
-                "number": {
-                    "value": 60,
-                    "density": {
-                        "enable": true,
-                        "value_area": 800
-                    }
-                },
-                "color": {
-                    "value": "#ffffff"
-                },
-                "shape": {
-                    "type": "circle",
-                    "stroke": {
-                        "width": 0,
-                        "color": "#000000"
-                    },
-                    "polygon": {
-                        "nb_sides": 5
-                    },
-                    "image": {
-                        "src": "img/github.svg",
-                        "width": 100,
-                        "height": 100
-                    }
-                },
-                "opacity": {
-                    "value": 0.25,
-                    "random": false,
-                    "anim": {
-                        "enable": false,
-                        "speed": 1,
-                        "opacity_min": 0.1,
-                        "sync": false
-                    }
-                },
-                "size": {
-                    "value": 3,
-                    "random": true,
-                    "anim": {
-                        "enable": false,
-                        "speed": 40,
-                        "size_min": 0.1,
-                        "sync": false
-                    }
-                },
-                "line_linked": {
-                    "enable": true,
-                    "distance": 150,
-                    "color": "#ffffff",
-                    "opacity": 0.3,
-                    "width": 1
-                },
-                "move": {
-                    "enable": true,
-                    "speed": 3,
-                    "direction": "none",
-                    "random": false,
-                    "straight": false,
-                    "out_mode": "out",
-                    "bounce": false,
-                    "attract": {
-                        "enable": false,
-                        "rotateX": 600,
-                        "rotateY": 1200
-                    }
-                }
-            },
-            "interactivity": {
-                "detect_on": "canvas",
-                "events": {
-                    "onhover": {
-                        "enable": false,
-                        "mode": "repulse"
-                    },
-                    "onclick": {
-                        "enable": false,
-                        "mode": "push"
-                    },
-                    "resize": true
-                },
-                "modes": {
-                    "grab": {
-                        "distance": 400,
-                        "line_linked": {
-                            "opacity": 1
-                        }
-                    },
-                    "bubble": {
-                        "distance": 400,
-                        "size": 40,
-                        "duration": 2,
-                        "opacity": 8,
-                        "speed": 3
-                    },
-                    "repulse": {
-                        "distance": 200,
-                        "duration": 0.4
-                    },
-                    "push": {
-                        "particles_nb": 4
-                    },
-                    "remove": {
-                        "particles_nb": 2
-                    }
-                }
-            },
-            "retina_detect": true
-        });
-    </script>
-</body>
-<div class="gituhubu">
-    <h1>Yukii´s Portfolio</h1>
+    <div id="blocks">
+        <div id="image">
+            <img src="https://i.imgur.com/Q2McCR2.png" alt="qwq" draggable="false" height="300px" width="300px">
+        </div>
+        <div id="text">
+            <h1><p>Hi, im Sinonaim</p>
+<p>and heres smth about me</p>
 
-</div>
-<div class="box">
-    <div class="column">
-        <br>
-        <br>
-        <br>
-        <a class="column" href="https://www.twitch.tv/sinonaim" target="_blank">Twitch</a>
-        <br>
-        <br>
-        <a class="column" href="https://www.github.com/PrincessAkira" target="_blank">Github</a>
-        <br>
-        <br>
-        <a class="column" href="https://discord.me/cozythighs" target="_blank">Discord</a>
-        <br>
-        <br>
-        <br>
-        <br>
+</h1>
+        </div>
+        <div id="box-pre">
+            <div id="box-self">
+                <div id="column">
+                    <p> <a id="column" href="https://www.twitch.tv/sinonaim" target="_blank">Twitch</a></p>
+                    <p></p> <a id="column" href="/spotify/index.php" target="_blank">Spotify Player</a></p>
+                    <p><a id="column" href="https://www.youtube.com/watch?v=DLzxrzFCyOs" target="_blank">Github</a></p>
+                    <p> <a id="column" href="https://www.last.fm/de/user/AzarielDev" target="_blank">Stalk me</a></p>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-<div class="images"></div>
-<div class="footer">
-    <p>&copy Yukii 2020</p>
-</div>
+
+</body>
+
+<footer>
+    <div id="foot">
+        <h1>&copy Sinonaim 2021</h1>
+    </div>
+</footer>
 
 </html>
